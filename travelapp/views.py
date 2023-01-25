@@ -10,9 +10,3 @@ def about(request):
     obj1=about.objects.all()
     return render(request,"index.html",{'place':obj1})
 
-def addition(request):
-    num1 = int(request.POST["num1"])
-    num2 = int(request.POST["num2"])
-    num3 = num1 + num2
-
-    return render(request, "result.html",{"add":num3})
